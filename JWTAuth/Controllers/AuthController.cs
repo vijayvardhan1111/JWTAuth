@@ -81,7 +81,7 @@ namespace JWTAuth.Controllers
         public IActionResult Test()
         {
             string token = Request.Headers["Authorization"];
-
+            string s = "sample test";
             if (token.StartsWith("Bearer"))
             {
                 token = token.Substring("Bearer ".Length).Trim();
